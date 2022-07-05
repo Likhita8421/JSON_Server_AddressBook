@@ -91,7 +91,7 @@ namespace RestSharp
         }
 
         [TestMethod]
-        public void OnDeleteCall_ShouldDeleteDataOnJsonServer()
+        public void OnDeleteCallShouldDeleteDataOnJsonServer()
         {
             client = new RestClient("http://localhost:3000");
             RestRequest request = new RestRequest("/friends/3", Method.Delete);
