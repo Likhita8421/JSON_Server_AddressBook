@@ -13,7 +13,7 @@ namespace RestSharp
         [TestMethod]
         public void OnGetMethod_Should_ReturnAddressBookDetails()
         {
-            client = new RestClient("http://localhost:3000");
+            client = new RestClient("http://localhost:3000");  
             RestRequest request = new RestRequest("/friends", Method.Get);
             RestResponse response = client.Execute(request);
             Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
