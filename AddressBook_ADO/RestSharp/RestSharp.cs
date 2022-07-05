@@ -38,7 +38,7 @@ namespace RestSharp
                 address = "13A",
                 city = "Goa",
                 state = "Maharashtra",
-                zipCode = 654321,
+                zipCode = 654221,
                 phone = 7890654321,
                 email = "soni@gmail.com"
             });
@@ -72,14 +72,14 @@ namespace RestSharp
             RestRequest request = new RestRequest("/friends/3", Method.Put);
             AddressBook_Model body = new AddressBook_Model
             {
-                firstName = "Harshini",
-                lastName = "Potnuri",
+                firstName = "Harshita",
+                lastName = "Rana",
                 address = "15A",
-                city = "Rajmundry",
-                state = "Andhra Pradesh",
+                city = "Jabalpur",
+                state = "Madhya Pradesh",
                 zipCode = 654321,
                 phone = 9704102176,
-                email = "harshini@gmail.com"
+                email = "har@gmail.com"
             };
             request.AddParameter("application/json", body, ParameterType.RequestBody);
             RestResponse response = client.Execute(request);
